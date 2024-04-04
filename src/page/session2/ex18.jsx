@@ -17,10 +17,10 @@ export default function Ex18() {
         isStatus: false
     },
 ]
-    const result = user.map((item) => {
-        if(item.age > 25 && item.isStatus === true) return item
-    })
-    console.log("mảng nhân viên lớn hơn 25 tuổi và isStatus = true", result)
+    const result = user.filter((item) => {
+        return item.age > 25 && item.isStatus === true;
+    });
+    console.log("Mảng nhân viên lớn hơn 25 tuổi và isStatus = true", result)
   return (
     <div >
     
